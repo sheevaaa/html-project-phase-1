@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shiva Goutham</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #000;
+      color: #f5f5f5;
+    }
+
+    .top-icons {
+      display: flex;
+      justify-content: flex-end;
+      background: #111;
+      padding: 10px 30px;
+      gap: 20px;
+    }
+    .top-icons a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    header nav {
+      background: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+    nav ul li a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-img img {
+      max-width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-content {
+      margin-left: 40px;
+      max-width: 500px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #a239ea;
+    }
+
+    #projects {
+      padding: 60px 20px;
+      background: #111;
+      text-align: center;
+    }
+
+    #projects h2 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .project-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .project {
+      background: #222;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 300px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      margin: 15px 0 10px;
+      color: #fff;
+    }
+
+    .project p {
+      color: #ccc;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #a239ea;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #111;
+      color: #a239ea;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+    }
+
+    .footer-links a {
+      color: #a239ea;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    section#about,
+    section#contact {
+      padding: 60px 20px;
+      text-align: center;
+      background: #000;
+    }
+
+    section#about h2,
+    section#contact h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    section#about p,
+    section#contact p {
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-content {
+        margin-left: 0;
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-icons">
+    <a href="mailto:shivagoutham5317665@gmail.com" title="Email">📧</a>
+    <a href="https://open.spotify.com/user/c70862eyyjw2yks0vuygreu5v" title="Spotify" target="_blank">🎵</a>
+    <a href="https://www.linkedin.com/in/shiva-goutham-26bb23317/" title="LinkedIn" target="_blank">💼</a>
+  </div>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#" style="color:#a239ea; font-weight:bold;">SG</a>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-img">
+      <img src="photo.jpg" alt="Shiva Goutham Photo">
+    </div>
+    <div class="hero-content">
+      <h1><span class="highlight">&lt;Student&gt;</span></h1>
+      <p>Hi, I'm Shiva Goutham — Blending logic and creativity, I’m exploring how design and technology meet. Currently studying Computer Science at Amrita, Kerala, and learning something new every day.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Some of My Latest Work</h2>
+    <div class="project-grid">
+      <div class="project">
+        <h3>My UI Design Book</h3>
+        <p>Book layout designed with UI principles in mind.</p>
+        <a href="https://github.com/yourusername/ui-design-book" target="_blank">See Project</a>
+      </div>
+      <div class="project">
+        <h3>Clean Design System</h3>
+        <p>Design system for a productivity app using modern CSS.</p>
+        <a href="https://github.com/yourusername/clean-design-system" target="_blank">View Repository</a>
+      </div>
+      <div class="project">
+        <h3>News App UI</h3>
+        <p>A mobile-first responsive news app interface.</p>
+        <a href="https://your-website.com/news-app" target="_blank">Visit Site</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Navigating the confluence of Computer Science and design, I am deeply entrenched at the intersection where technology synergizes with aesthetics. As I delve deeper into my journey in Information Design at the esteemed Amrita, Kerala, I'm continually evolving my expertise.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Let’s collaborate or connect!</p>
+    <a href="mailto:shivagoutham5317665@gmail.com">📧 Email Me</a>
+  </section>
+
+  <footer>
+    <p style="opacity: 0.7;">made with 💜 by shiva</p>
+    <div class="footer-links">
+      <a href="mailto:shivagoutham5317665@gmail.com" title="Email">📧</a>
+      <a href="https://open.spotify.com/user/c70862eyyjw2yks0vuygreu5v" title="Spotify" target="_blank">🎵</a>
+      <a href="https://www.linkedin.com/in/shiva-goutham-26bb23317/" title="LinkedIn" target="_blank">💼</a>
+    </div>
+  </footer>
+
+</body>
+</html>
